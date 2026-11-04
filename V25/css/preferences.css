@@ -1,0 +1,72 @@
+/* Optional reading/display preferences, shared by every page. */
+html[data-text-size="larger"] { font-size: 125%; }
+html[data-text-size="largest"] { font-size: 150%; }
+html[data-word-spacing="wider"] { word-spacing: .12em; }
+html[data-line-spacing="roomier"] { --reading-line-height: 1.95; }
+.preferences-trigger { appearance: none; display: flex; align-items: center; justify-content: start; gap: 8px; background: transparent; color: inherit; border: 2px solid #a79aaa; border-radius: 6px; padding: 8px 10px; min-height: 48px; width: 100%; cursor: pointer; font: 600 .85rem/1.5 'Open Sans',system-ui,sans-serif; text-align: left; }
+.preferences-trigger svg { flex: 0 0 24px; color: inherit; }
+.preferences-trigger:hover,.preferences-trigger:focus-visible { background: #3b3248; border-color: #f8d5e1; }
+.nav-wide .preferences-trigger { width: auto; padding: 4px 12px; white-space: nowrap; }
+/* In Menu, use an unboxed row with an 8px gap below Playtest. */
+.site-header:not(.nav-wide) .preferences-trigger { border: 0; border-radius: 4px; padding: 10px 12px; margin: 8px 0 0; }
+.preferences-open { overflow: hidden; }
+.preferences-dialog { width: calc(100% - 32px); max-width: 560px; max-height: calc(100vh - 32px); max-height: calc(100dvh - 32px); padding: 0; border: 2px solid var(--panel-border); border-radius: 18px; color: var(--text); background: var(--bg); overflow: auto; }
+.preferences-dialog::backdrop { background: rgba(0,0,0,.55); }
+.preferences-header { position: sticky; top: 0; z-index: 1; display: flex; align-items: start; justify-content: space-between; gap: 16px; padding: 20px 24px; background: var(--bg); border-bottom: 2px solid var(--border); }
+.preferences-header h2 { flex: 1; min-width: 0; font-size: 1.4rem; align-self: center; }
+.preferences-header h2:focus { outline: none; }
+.preferences-close { appearance: none; background: transparent; color: var(--text); border: 2px solid transparent; border-radius: 8px; font-size: 1.5rem; line-height: 1; min-width: 44px; min-height: 44px; flex: 0 0 44px; cursor: pointer; }
+.preferences-close:hover { background: var(--secondary-hover); }
+.preferences-content { display: grid; gap: 20px; padding: 24px; }
+.preferences-intro,.preferences-storage { color: var(--muted); }
+.preferences-field { display: grid; gap: 8px; min-width: 0; }
+.preferences-field label { font-weight: 600; }
+.preferences-field select { -webkit-appearance: none; appearance: none; width: 100%; min-width: 0; min-height: 48px; border: 2px solid var(--field-border); border-radius: 8px; padding: 10px 44px 10px 12px; font: inherit; line-height: 1.4; color: var(--text); background: var(--surface); }
+.preferences-storage { font-size: .85rem; }
+.preferences-status { font-size: .85rem; }
+.preferences-status:empty { display: none; }
+.preferences-actions { position: sticky; bottom: 0; z-index: 1; display: flex; flex-wrap: wrap; gap: 12px; padding: 16px 24px; background: var(--bg); border-top: 2px solid var(--border); }
+.preferences-actions .button { display: block; flex: 1 1 160px; line-height: 1.5; text-align: center; }
+/* Stronger flat colors supplement the ordinary palettes, without recoloring photographs. */
+:root[data-theme="light"][data-contrast="increased"] { --bg: #fff; --surface: #f2f2f2; --text: #111; --muted: #222; --accent: #003a70; --border: #555; --panel-border: #555; --field-border: #555; --focus: #003a70; --button: #111; --button-text: #fff; --button-hover: #333; --secondary-hover: #e1e8ef; }
+:root[data-theme="dark"][data-contrast="increased"] { --bg: #080808; --surface: #181818; --text: #fff; --muted: #eee; --accent: #fff; --border: #aaa; --panel-border: #ccc; --field-border: #ccc; --focus: #ffea00; --button: #fff; --button-text: #080808; --button-hover: #ddd; --secondary-hover: #333; }
+html[data-contrast="increased"] .hero,html[data-contrast="increased"] .page-banner,html[data-contrast="increased"] .site-header,html[data-contrast="increased"] .site-footer { background: #111; color: #fff; }
+html[data-contrast="increased"] .hero::before,html[data-contrast="increased"] .page-banner::before,html[data-contrast="increased"] .site-footer::before { display: none; }
+html[data-contrast="increased"] .site-footer p,html[data-contrast="increased"] .article-banner .eyebrow { color: #fff; }
+html[data-contrast="increased"] .insight-art { background: #111; color: #fff; }
+html[data-contrast="increased"] .art-ring { border-color: #bbb; }
+html[data-contrast="increased"] .footer-links a:hover,html[data-contrast="increased"] .footer-links a:focus-visible,html[data-contrast="increased"] .footer-name:hover { color: #fff; background: #333; }
+html[data-contrast="increased"] .nav-links a[aria-current] { text-decoration-color: #fff; }
+html[data-contrast="increased"] .nav-links .participant-link,html[data-contrast="increased"] .menu-toggle { border-color: #fff; }
+/* Cooperate with the user's system contrast palette instead of forcing our own colors. */
+@media (forced-colors: active) {
+ .hero,.page-banner,.site-footer { background-image: none !important; color: CanvasText; background-color: Canvas; }
+ .hero::before,.page-banner::before,.site-footer::before { display: none; }
+ .brand img,.hero-logo img { display: none; }
+ .wordmark-text { display: inline; color: CanvasText; font-weight: 800; }
+ .brand .wordmark-text { font-size: 1rem; }
+ .hero-logo .wordmark-text { font-size: 2.4rem; }
+ .preferences-trigger,.preferences-close { border-color: ButtonText; }
+ .profile-overlay { background: Canvas; }
+}
+
+/* Keep long text and optional controls within narrow layouts when text is enlarged. */
+body>main,.wrap { min-width: 0; }
+p,h1,h2,h3,dd,.button { overflow-wrap: break-word; }
+.article-banner .eyebrow { font-size: .7rem; }
+.success-action .button { white-space: normal; flex-shrink: 1; }
+
+/* Keep the native select, with a consistently inset decorative chevron. */
+.preferences-select { position: relative; min-width: 0; }
+.preferences-select::after { content: ''; position: absolute; right: 18px; top: 50%; width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-70%) rotate(45deg); pointer-events: none; }
+/* The compact shortcut shares the header utility palette and has a fixed touch target. */
+.preferences-floating { position: fixed; left: calc(16px + env(safe-area-inset-left,0px)); bottom: calc(16px + env(safe-area-inset-bottom,0px)); z-index: 6; display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; min-width: 48px; min-height: 48px; padding: 10px; border: 2px solid #a79aaa; border-radius: 12px; color: #fff; background: #15101e; cursor: pointer; }
+.preferences-floating:hover,.preferences-floating:focus-visible { background: #3b3248; border-color: #f8d5e1; }
+.preferences-floating svg { display: block; flex: 0 0 24px; color: inherit; }
+html[data-preferences-layout="compact"] { scroll-padding-bottom: calc(80px + env(safe-area-inset-bottom,0px)); }
+html[data-preferences-layout="compact"] .site-footer { padding-bottom: calc(100px + env(safe-area-inset-bottom,0px)); }
+html[data-contrast="increased"] .preferences-trigger,html[data-contrast="increased"] .preferences-floating { border-color: #fff; }
+@media (forced-colors: active) {
+ .preferences-floating { color: ButtonText; background: ButtonFace; border-color: ButtonText; }
+ .preferences-select::after { border-color: ButtonText; }
+}
