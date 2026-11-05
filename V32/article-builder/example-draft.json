@@ -1,0 +1,184 @@
+{
+  "version": 3,
+  "title": "What a playtest can tell you before launch",
+  "intro": "A closer look at what players do, what they say, and what those observations can help you understand.",
+  "category": "Methods in practice · Sample article",
+  "author": "",
+  "date": "",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "You know how your game is meant to work. A playtest gives you a chance to see how someone else experiences it, including the moments that feel clear, the parts that surprise them, and the places where they get stuck.",
+      "lead": true
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "text": "Start with what you need to learn"
+    },
+    {
+      "type": "paragraph",
+      "text": "A useful starting point is a question your team is working through. Perhaps players need to understand a new mechanic, find their way through an unfamiliar space, or choose between several ways to progress.",
+      "lead": false
+    },
+    {
+      "type": "paragraph",
+      "text": "Those questions shape the study: who takes part, which version of the game they see, and what they are asked to do. They also give the team a way to judge whether the findings address the decisions ahead.",
+      "lead": false
+    },
+    {
+      "type": "list",
+      "style": "unordered",
+      "text": "Do new players understand what the game is asking them to do?\nWhich parts of the interface help them, and which interrupt their progress?\nWhat do players notice, enjoy, or misunderstand during the experience?"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "text": "Watch the experience unfold"
+    },
+    {
+      "type": "paragraph",
+      "text": "A player’s actions can reveal details that a broad question about whether they liked the game would leave unexplored. Watching someone pause, look for information, retry an action, or take an unexpected route gives the researcher something specific to investigate.",
+      "lead": false
+    },
+    {
+      "type": "paragraph",
+      "text": "Player comments add another perspective. Asking about a particular moment can help clarify what the player expected and how they understood what happened. What someone does and what they say can be useful together.",
+      "lead": false
+    },
+    {
+      "type": "highlight",
+      "label": "Hypothetical example",
+      "title": "Finding the next objective",
+      "level": "h3",
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Imagine a player who finishes a task but keeps searching the same room. When asked what they are looking for, they explain that they expect another instruction to appear.",
+          "lead": false
+        },
+        {
+          "type": "paragraph",
+          "text": "The observation points to a question about how the game communicates progress. It does not, on its own, tell the team which design change to make.",
+          "lead": false
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "text": "Look for what works, too"
+    },
+    {
+      "type": "paragraph",
+      "text": "A study can explore moments of confidence and enjoyment as well as difficulty. Perhaps a visual cue helps a player understand a mechanic immediately, or an encounter encourages them to experiment.",
+      "lead": false
+    },
+    {
+      "type": "paragraph",
+      "text": "Understanding those moments helps the team recognize strengths worth preserving. The aim is to understand the experience in relation to the research questions, including where it supports what the game is trying to achieve.",
+      "lead": false
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "text": "Separate findings from recommendations"
+    },
+    {
+      "type": "paragraph",
+      "text": "A finding explains something the research revealed. A recommendation proposes a response. Keeping that distinction clear helps a team consider the evidence alongside its design goals, technical constraints, and other knowledge.",
+      "lead": false
+    },
+    {
+      "type": "highlight",
+      "label": "Hypothetical example",
+      "title": "",
+      "level": "h3",
+      "children": [
+        {
+          "type": "heading",
+          "text": "Observation",
+          "compact": true
+        },
+        {
+          "type": "paragraph",
+          "text": "A player completes the task, then continues searching the room because they expect another instruction."
+        },
+        {
+          "type": "heading",
+          "text": "Possible finding",
+          "compact": true
+        },
+        {
+          "type": "paragraph",
+          "text": "In this session, the player did not recognize that the objective was complete."
+        },
+        {
+          "type": "heading",
+          "text": "Optional recommendation",
+          "compact": true
+        },
+        {
+          "type": "paragraph",
+          "text": "Explore a clearer completion cue, then test whether players understand it."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Some teams want findings they can interpret and act on themselves. Others also want recommendations. Agreeing on the deliverables before the study makes room for either approach.",
+      "lead": false
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "text": "Keep the context in view"
+    },
+    {
+      "type": "paragraph",
+      "text": "A playtest examines a particular experience with particular players. The build, research questions, participant selection, and session setup all matter when interpreting what happened.",
+      "lead": false
+    },
+    {
+      "type": "paragraph",
+      "text": "A small qualitative study can help explain how a difficulty arises. It cannot establish how common that difficulty is across the entire player population. A different question may call for a different study design or further research.",
+      "lead": false
+    },
+    {
+      "type": "highlight",
+      "label": "",
+      "title": "Clarity for the decisions ahead",
+      "level": "h2",
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "A playtest can give your team a closer view of how people experience the game you are building. The value lies in what it helps you understand: the strengths, the points of friction, and the questions worth investigating next.",
+          "lead": false
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "text": "Further reading"
+    },
+    {
+      "type": "paragraph",
+      "text": "For more background on observing users and planning a playtest:",
+      "lead": false
+    },
+    {
+      "type": "links",
+      "items": [
+        {
+          "label": "Usability testing basics",
+          "url": "https://www.nngroup.com/articles/usability-testing-101/"
+        },
+        {
+          "label": "Planning a playtest",
+          "url": "https://gamesuserresearch.com/how-to-run-a-games-user-research-playtest/"
+        }
+      ]
+    }
+  ]
+}
