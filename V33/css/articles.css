@@ -1,0 +1,16 @@
+/* Generated articles share the existing reading column and preference tokens. */
+.article-meta { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: .85rem; }
+.article-reading { overflow-wrap: anywhere; }
+.article-image { margin: 28px 0; }
+.article-image img { width: 100%; height: auto; border-radius: 12px; }
+.article-image figcaption { color: var(--muted); font-size: .85rem; margin-top: 12px; }
+.article-quote { border-inline-start: 4px solid var(--accent); margin-inline: 0; }
+.article-quote blockquote { margin: 0; }
+.article-quote cite { display: block; margin-top: 14px; font-size: .9rem; }
+@media (forced-colors: active) { .article-example { border: 1px solid CanvasText; } }
+/* Headings inside highlight boxes replace the former label/description controls. */
+.article-reading .panel-content-heading { font-size:1rem; line-height:1.7; letter-spacing:0; font-weight:700; margin:20px 0 6px; }
+.article-reading .panel-content-heading:first-child { margin-top:0; }
+.article-reading .panel-content-heading+p { margin-top:0; }
+.article-reading .article-quote { margin-top:24px; }
+.article-reading .article-example>.eyebrow+.panel-content-heading { margin-top:0; }
