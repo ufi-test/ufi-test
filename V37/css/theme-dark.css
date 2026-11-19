@@ -1,0 +1,2 @@
+/* Shared dark palette. The media attribute handles device preference without JavaScript. */
+:root{color-scheme:dark;--bg:#1a1426;--surface:#241d31;--text:#f9f5fb;--muted:#d6ccdd;--accent:#f8d5e1;--border:#776682;--panel-border:#9d8ca7;--focus:#f8d5e1;--button:#f8d5e1;--button-text:#1a1426;--button-hover:#fff0f6;--header:#15101e;--texture-opacity:.15;--banner-text:#fff;--secondary-hover:#3b3048;--field-border:#ad9bbd;--gradient:linear-gradient(305deg,rgba(244,202,216,.90) 0%,rgba(129,112,137,.90) 35%,rgba(20,26,61,.90) 100%)}
